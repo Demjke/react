@@ -1,0 +1,17 @@
+body,
+h1 {
+    margin: 0;
+}
+.app {
+    background: turquoise;
+    min-height: 100vh;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1228px;
+    padding: 10px;
+    width: 100%;
+}
+.message {
+    margin-top: 10px;
+}
