@@ -7,6 +7,7 @@ import Comments from "./pages/Comments";
 import HomeWorks from "./pages/Homeworks";
 import Lessons from "./pages/Lessons";
 import Products from "./pages/Products";
+import Theme from "./pages/Theme";
 import "./styles/style.css";
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
                         <Route path="/homeworks" element={<HomeWorks />} />
                         <Route path="/articles/*" element={<Articles />} />
                         <Route path="/products/*" element={<Products />} />
+                        <Route path="/theme" element={<Theme />} />
                     </Routes>
                 </div>
             </main>

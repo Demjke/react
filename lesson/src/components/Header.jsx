@@ -9,6 +9,7 @@ const routes = {
     ДЗ: "/homeworks",
     Статьи: "/articles",
     Товары: "/products",
+    Тема: "/theme",
 };
 
 const Header = () => (
