@@ -7,6 +7,8 @@ const routes = {
     Счетчик: "/counters",
     Уроки: "/lessons",
     ДЗ: "/homeworks",
+    Статьи: "/articles",
+    Товары: "/products",
 };
 
 const Header = () => (

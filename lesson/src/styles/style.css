@@ -158,3 +158,32 @@ button {
     flex-direction: column;
     gap: 20px;
 }
+
+/* --- Товары --- */
+.products {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* --- Пагинация --- */
+.pagination {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.pagination-btn {
+    padding: 5px 10px;
+    border-radius: 100%;
+}
+.pagination-btn.active {
+    background: blue;
+    color: #fff;
+}
