@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import Counter from "./../components/Counter";
+import Counter from "../components/lessons2/Counter";
 
 const Counters = () => {
     const products = [
@@ -13,6 +13,7 @@ const Counters = () => {
     const removeAll = useCallback(() => {
         setResetKey(prev => prev + 1); // Обновляем ключ, чтобы сбросить счетчики
     }, []);
+
     return (
         <div className="counters">
             <h1>Счетчик</h1>

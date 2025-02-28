@@ -1,23 +1,26 @@
+import { Button, ButtonGroup } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
-    return (
-        <header className="header">
-            <div className="container">
-                <div className="nav header-nav">
-                    <NavLink to="/" className="header-nav__link">
-                        Главная
-                    </NavLink>
-                    <NavLink to="/comments" className="header-nav__link">
-                        Коментарии
-                    </NavLink>
-                    <NavLink to="/counters" className="header-nav__link">
-                        Счетчик
-                    </NavLink>
-                </div>
-            </div>
-        </header>
-    );
+const routes = {
+    Главная: "/",
+    Комментарии: "/comments",
+    Счетчик: "/counters",
+    Уроки: "/lessons",
+    ДЗ: "/homeworks",
 };
+
+const Header = () => (
+    <header className="header">
+        <div className="container">
+            <ButtonGroup variant="contained">
+                {Object.entries(routes).map(([label, path]) => (
+                    <Button key={path} component={NavLink} to={path}>
+                        {label}
+                    </Button>
+                ))}
+            </ButtonGroup>
+        </div>
+    </header>
+);
 
 export default Header;

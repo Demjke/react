@@ -5,23 +5,24 @@
     font-family: "Roboto", sans-serif;
     line-height: 1.2;
 }
-
 body,
 h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
     margin: 0;
 }
-
 a {
     color: inherit;
     text-decoration: none;
 }
-
 .app {
     background: turquoise;
     min-height: 100vh;
 }
-
 .container {
     margin: 0 auto;
     max-width: 1228px;
@@ -29,6 +30,7 @@ a {
     width: 100%;
 }
 
+/* --- Шапка --- */
 .header {
     background: silver;
 }
@@ -109,4 +111,50 @@ a {
 
 .comment-remove:hover {
     background: darkred;
+}
+
+/* --- Уроки --- */
+.lessons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.lesson {
+    background: #555;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form {
+    display: flex;
+    align-items: stretch;
+}
+button {
+    max-width: 200px;
+    width: 100%;
+}
+.converter {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 10px;
+    align-items: stretch;
+}
+.converter input {
+    width: 100%;
+    flex: 1;
+}
+
+/* --- Дз --- */
+.homeworks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.homework {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

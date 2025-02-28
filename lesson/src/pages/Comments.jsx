@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import Comment from "../components/Comment";
+import Comment from "../components/lessons2/Comment";
 
 const Comments = () => {
     const [comments, setComments] = useState([
