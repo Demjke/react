@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from './counterSlice';
-import themeReducer from './themeSlice';
+import counterReducer from './slices/counterSlice';
+import productsSlice from './slices/productsSlice';
+import themeReducer from './slices/themeSlice';
 
 const store = configureStore({
   reducer: {
     counter: counterReducer,
     theme: themeReducer,
+    products: productsSlice,
   }
 })
 

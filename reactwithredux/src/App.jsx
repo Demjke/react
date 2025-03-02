@@ -1,6 +1,9 @@
 import { useSelector } from "react-redux";
-import Counter from "./component/Counter";
-import Theme from "./component/Theme";
+import { Route, Routes } from "react-router-dom";
+import Header from "./component/Header";
+import AddProduct from "./pages/AddProduct";
+import Home from "./pages/Home";
+import Products from "./pages/Products";
 
 const App = () => {
     const theme = useSelector(state => state.theme);
@@ -13,8 +16,14 @@ const App = () => {
                 color: theme ? "#000" : "#fff",
             }}
         >
-            <Counter />
-            <Theme />
+            <Header />
+            <div className="main">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/products" element={<Products />} />
+                    <Route path="/add-product" element={<AddProduct />} />
+                </Routes>
+            </div>
         </div>
     );
 };
