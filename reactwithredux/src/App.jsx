@@ -4,6 +4,7 @@ import Header from "./component/Header";
 import AddProduct from "./pages/AddProduct";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
+import Todo from "./pages/Todo";
 
 const App = () => {
     const theme = useSelector(state => state.theme);
@@ -22,6 +23,7 @@ const App = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/add-product" element={<AddProduct />} />
+                    <Route path="/todo" element={<Todo />} />
                 </Routes>
             </div>
         </div>
